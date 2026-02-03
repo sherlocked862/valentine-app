@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-pink-50 to-red-50 min-h-screen;
+}
+
+.valentine-container {
+  @apply flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 md:p-8;
+}
+
+.heart-beat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
