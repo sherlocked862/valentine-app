@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import Image from 'next/image'
 
 const ValentinePage = () => {
     const [saidNoCount, setSaidNoCount] = useState(0)
@@ -109,11 +110,14 @@ const ValentinePage = () => {
                             animate={{ scale: [1, 1.05, 1] }}
                             transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
                         >
-                            <img
+                            <Image
                                 src={teaserGif}
                                 alt="Cute Valentine bear"
+                                width={256}
+                                height={256}
                                 // FIX: Smaller image on mobile
                                 className="w-40 h-40 md:w-64 md:h-64 mx-auto rounded-2xl shadow-lg object-cover"
+                                priority={false}
                             />
                         </motion.div>
 
@@ -190,10 +194,13 @@ const ValentinePage = () => {
                             animate={{ rotate: [0, 5, -5, 0] }}
                             transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
                         >
-                            <img
+                            <Image
                                 src={celebrationGif}
                                 alt="Happy celebration"
+                                width={256}
+                                height={256}
                                 className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-2xl shadow-lg"
+                                priority={false}
                             />
                         </motion.div>
 
@@ -218,8 +225,8 @@ const ValentinePage = () => {
 
                                 <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-400 my-4">
                                     <p className="text-gray-800 italic font-medium">
-                                        "I love you so much. I also wanted to tell you how sorry I am for my behavior
-                                        over the past two days. I promise to do better and make it up to you."
+                                        &quot;I love you so much. I also wanted to tell you how sorry I am for my behavior
+                                        over the past two days. I promise to do better and make it up to you.&quot;
                                     </p>
                                 </div>
 

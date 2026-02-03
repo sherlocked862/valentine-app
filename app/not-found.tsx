@@ -6,13 +6,13 @@ export default function NotFound() {
         Page Not Found
       </h2>
       <p className="text-gray-600 mb-6 max-w-md">
-        Looks like you're lost in love! But don't worry, the Valentine's magic is waiting for you on the main page.
+        Looks like you&#39;re lost in love! But don&#39;t worry, the Valentine&#39;s magic is waiting for you on the main page.
       </p>
       <a 
         href="/" 
         className="bg-valentine-pink hover:bg-valentine-red text-white font-bold py-3 px-6 rounded-full transition-all duration-300 inline-block"
       >
-        Go to Valentine's Page 💕
+        Go to Valentine&#39;s Page 💕
       </a>
     </div>
   )

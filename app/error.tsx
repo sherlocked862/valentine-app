@@ -20,7 +20,7 @@ export default function Error({
         Something went wrong!
       </h2>
       <p className="text-gray-600 mb-6 max-w-md">
-        Don't worry, this is just a technical glitch. Our love for you remains strong!
+        Don&#39;t worry, this is just a technical glitch. Our love for you remains strong!
       </p>
       <button
         className="bg-valentine-pink hover:bg-valentine-red text-white font-bold py-3 px-6 rounded-full transition-all duration-300"
